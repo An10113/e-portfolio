@@ -24,11 +24,7 @@ section{
     color: #f06449;
 }
 
-.header__para{
-    line-height: 1.5;
-    font-size: 24px;
-    max-width: 500px;
-}
+
 
 /* 
 
@@ -43,7 +39,7 @@ nav{
     max-width: 1200px;
     height: 100px;
     margin: 0 auto;
-
+    
 }
 #personal-logo{
     filter: invert(1);
@@ -83,5 +79,23 @@ header{
     transform: translate(-50%,-50%);
     width: 100%;
     max-width: 1000px;
+    
+}
+.header__para{
+    line-height: 1.5;
+    font-size: 24px;
+    max-width: 500px;
+}
 
+.header__list{
+    margin-top: 16px;
+}
+
+.header__link{
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    margin-right: 12px;
+    border-radius: 50%;
+    text-decoration: none;
 }
