@@ -16,6 +16,19 @@ section{
 button{
     cursor: pointer;
 }
+
+.container{
+    padding: 50px 0;
+}
+.row{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+
+
 .title{
     font-size: 64px;
     margin-bottom: 12px;
@@ -163,5 +176,18 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* 
+
+Project
+
+*/
+
+
+.section__title{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 60px;
 }
 
