@@ -190,4 +190,11 @@ Project
     font-size: 48px;
     margin-bottom: 60px;
 }
+.project__description{
+    position: absolute;
+}
+.project__wrapper{
+    position: relative;
+}
+
 
