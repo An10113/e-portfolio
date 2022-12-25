@@ -183,8 +183,12 @@ header{
 Project
 
 */
+.project {
+    margin-bottom: 135px;
+  }
 
 
+  
 .section__title{
     text-align: center;
     font-size: 48px;
@@ -193,13 +197,16 @@ Project
 
 .project__img{
     width: 100%;
+    height: 100%;
+    transition: all 600ms ease;
     
 }
 
 .project__wrapper{
     position: relative;
     border-radius: 24px;
-    box-shadow: 0 20px 80px 0 rgb(0,0,0,0.45);
+    box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.45);
+    overflow: hidden;
 }
 .project__wrapper--background{
     position: absolute;
@@ -208,17 +215,45 @@ Project
     width: 100%;
     height: 100%;
     background-color: #1c1d25;
-    opacity: 0.8;
-
+    opacity: 0;
+    transition: all 300ms ease;
 }
 
+.project__wrapper:hover .project__description{
+    opacity: 1;
+    transform: translateY(-50%);
+}
+.project__wrapper:hover .project__img{
+    filter: blur(5%);
+    transform: scale(1.07);
+}
+.project__wrapper:hover .project__wrapper--background{
+    opacity: 0.8;
+}
 .project__description{
     position: absolute;
     top: 50%;
     left: 84px;
-    transform: translateY(-50%);
+    transform: translateY(100%);
     color: white;
     max-width: 550px;
-
+    opacity: 0;
+    transition: transform 400ms ease, opacity 300ms;
 }
 
+.project__description--title{
+    font-size: 48px;
+}
+.project__description--subtitle{
+    margin: 0 8px;
+}
+.project__description--para{
+    margin: 16px 0;
+}
+
+.project__description--link{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 8px;
+}
