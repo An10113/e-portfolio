@@ -78,7 +78,7 @@
       </a>
       <div class="modal">
         <div class="modal__half modal__about">
-          <h3 class="mdoal__title modal__title--about">
+          <h3 class="modal__title modal__title--about">
             Here's some fact about me
           </h3>
           <h4 class="modal__subtitle modal__subtitle--about">
@@ -88,7 +88,8 @@
             Lorem ipsum dolor <b class="orange">sit amet</b> consectetur
             adipisicing elit. <b class="orange">Lorem, ipsum.</b> impedit atque
             quia ipsum consectetur?
-            <br />
+            <br>
+            <br>
             Lorem ipsum dolor <b class="orange">sit amet</b> consectetur,
             adipisicing elit. Qui
             <b class="orange">cumque minima soluta</b> quos excepturi dolorum.
@@ -130,29 +131,36 @@
         </div>
         <div class="modal__half modal__contact">
           <h3 class="modal__title modal__title--contact">Let's have a chat</h3>
-          <h3 class="modal__subtitle modal__subtitle--contact">
+          <h4 class="modal__subtitle modal__subtitle--contact">
             I'm currently open to new experiences.
-          </h3>
+          </h4>
           <form id="contact__form" action="">
-            <div class="for__item">
+            <div class="form__item">
               <label class="form__item--label">Name</label>
               <input class="input" name="user_name" type="text" required />
             </div>
-            <div class="for__item">
+            <div class="form__item">
               <label class="form__item--label">Email</label>
               <input class="input" name="user_email" type="email" required />
             </div>
-            <div class="for__item">
-              <label class="form__item--label">message</label>
-              <textarea
-                class="input"
-                name="message"
-                type="text"
-                required
-              ></textarea>
+            <div class="form__item">
+              <label class="form__item--label"> Message</label>
+              <textarea class="input" name="message" type="text"></textarea>
             </div>
+            <button id="conatact__submit" class="form__submit">
+              Send it my way
+            </button>
           </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fa-solid fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thanks for the message! 
+            <br>
+            Hope to work with you soon
+          </div>
         </div>
+        <i class="fa-regular fa-circle-xmark modal__exit click"></i>
       </div>
     </section>
     <section id="project">
