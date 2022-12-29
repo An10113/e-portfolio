@@ -50,6 +50,22 @@ label{
     font-size: 14px;
     font-weight: 700;
 }
+nav,
+header,
+.scroll{
+    opacity: 1;
+    visibility: visible;
+    transition: all 600ms 800ms ;
+}
+
+.modal--open nav,
+.modal--open header,
+.modal--open .scroll{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 400ms;
+}
+
 
 
 .container{
@@ -245,6 +261,8 @@ Modal
 
 */
 
+
+
 .modal{
     position: absolute;
     top: 50%;
@@ -257,14 +275,15 @@ Modal
     display: flex;
     height: 700px;
     visibility: hidden;
+    transition: visibility 1s, z-index 0.5s, box-shadow 0.5s ease;
 }
 
 .modal--open .modal{
     z-index: 2;
     visibility: visible;
     box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.5);
-
 }
+
 
 
 
@@ -275,14 +294,21 @@ Modal
     flex-direction: column;
     justify-content: center;
     position: relative;
+    transition: all 300ms ease-in;
 }
+.modal--open .modal__contact,
+.modal--open .modal__about{
+    transform: translateX(0%);
+}
+
 .modal__about{
     background-color: rgb(245, 245, 245);
-    
+    transform: translateX(-110%);
 }
 .modal__contact{
     background-color: #242424;
     color: white;
+    transform: translateX(110%);
 }
 .modal__languages{
     display: flex;
@@ -362,7 +388,7 @@ Modal
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     z-index: -1;
