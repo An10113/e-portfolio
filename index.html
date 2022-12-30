@@ -22,10 +22,10 @@
     </script>
   </head>
   <body>
-    <section id="landing-page">
+    <section id="landing-page" onmousemove="moveBackground(event)">
       <nav>
         <figure>
-          <img id="personal-logo" src="./assets/logo.svg" alt="" />
+          <img id="personal-logo" src="./assets/letter-a.png" alt="" />
         </figure>
         <ul class="nav__link--list">
           <li class="nav__link click">
@@ -49,7 +49,7 @@
               >Contact</a
             >
           </li>
-          <li class="nav__link click">
+          <li class="nav__link click" onclick="toggleContrast()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
@@ -61,7 +61,7 @@
       <header>
         <div class="header__content">
           <h1 class="title">Hello</h1>
-          <h1 class="title orange">I'm An</h1>
+          <h1 class="title2 orange">I'm An</h1>
           <p class="header__para">
             Lorem ipsum <span class="orange">dolor sit amet</span> consectetur
             adipisicing elit. Quisquam, quam ipsam corrupti, fugit officiis
@@ -140,7 +140,10 @@
           </div>
         </div>
         <div class="modal__half modal__contact">
-          <i class="fa-regular fa-circle-xmark modal__exit click " onclick="toggleModal()"></i>
+          <i
+            class="fa-regular fa-circle-xmark modal__exit click"
+            onclick="toggleModal()"
+          ></i>
           <h3 class="modal__title modal__title--contact">Let's have a chat</h3>
           <h4 class="modal__subtitle modal__subtitle--contact">
             I'm currently open to new experiences.
@@ -172,6 +175,15 @@
           </div>
         </div>
       </div>
+      <img src="./assets/semi circle.svg" alt="" class="shapes--1 shape"/>
+      <img src="./assets/squiggly.svg" alt="" class="shapes--2 shape"/>
+      <img src="./assets/triangle.svg" alt="" class="shapes--3 shape"/>
+      <img src="./assets/circle.svg" alt="" class="shapes--4 shape"/>
+      <img src="./assets/semi circle.svg" alt="" class="shapes--5 shape"/>
+      <img src="./assets/squiggly.svg" alt="" class="shapes--6 shape"/>
+      <img src="./assets/triangle.svg" alt="" class="shapes--7 shape"/>
+      <img src="./assets/circle.svg" alt="" class="shapes--8 shape"/>
+      <img src="./assets/semi circle.svg" alt="" class="shapes--9 shape" />
     </section>
     <section id="project">
       <div class="container">
@@ -287,7 +299,7 @@
       <div class="container">
         <div class="footer__row row">
           <figure>
-            <img class="footer__logo--img" src="./assets/logo.svg" alt="" />
+            <img class="footer__logo--img" src="./assets/letter-a.png" alt="" />
           </figure>
           <div class="footer__social--list">
             <a

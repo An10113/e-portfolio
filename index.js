@@ -20,11 +20,9 @@ function contact(event){
         })
     }
 
+
 let isModalopen = false
-
-
 function toggleModal(){
-    console.log('ok')
     if(isModalopen){
         isModalopen = false
         return document.body.classList.remove("modal--open")
@@ -32,4 +30,32 @@ function toggleModal(){
     isModalopen = true
     document.body.classList += "modal--open"
 }
+
+
+let Contrast = false ;
+function toggleContrast(){
+    console.log('ok')
+    Contrast =  !Contrast
+    if(Contrast){
+        document.body.classList += "dark-theme"
+    }
+    else{
+        document.body.classList.remove("dark-theme")
+    }
+}
+
+const scaleFactor = 1/20
+
+function moveBackground(event){
+    const shapes = document.querySelectorAll(".shape");
+    const x = event.clientX*scaleFactor
+    const y = event.clientY*scaleFactor
+
+    for(let i=0;i<shapes.length;++i){
+        const value = i % 2 !== 0;
+        const boolInt = value ? -1 : 1
+        shapes[i].style.transform = `translate(${x*boolInt}px,${y*boolInt}px)`
+    }
+}
+
 

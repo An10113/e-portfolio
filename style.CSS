@@ -12,6 +12,7 @@ li{
 
 section{
     background-color: rgb(245, 245, 245);
+    transition: all 400ms ease;
 }
 button{
     cursor: pointer;
@@ -82,6 +83,12 @@ header,
 
 
 .title{
+    font-size: 64px;
+    margin-bottom: 12px;
+    text-align: left;
+    line-height: 1;
+}
+.title2{
     font-size: 64px;
     margin-bottom: 12px;
     text-align: left;
@@ -175,6 +182,9 @@ header,
         transform: translateY(3px);
     }
 }
+
+
+
 /* 
 
 nav 
@@ -192,7 +202,6 @@ nav{
     
 }
 #personal-logo{
-    filter: invert(1);
     width: 50px;
     height: 50px;
 }
@@ -219,7 +228,6 @@ Landing page
 
 #landing-page{
     min-height: 100vh;
-    
 }
 
 header{
@@ -437,6 +445,41 @@ Modal
 }
 
 
+
+/* 
+Dark-theme
+*/
+.dark-theme .title,
+.dark-theme .section__title,
+.dark-theme .header__para,
+.dark-theme .nav__link--anchor{
+    color: white;
+}
+.dark-theme section{
+    background-color: #242424;
+}
+.dark-theme footer{
+    background-color: black;
+}
+.dark-theme #personal-logo{
+    filter: invert(1);
+}
+.dark-theme .scroll__icon{
+    border-color: white ;
+}
+.dark-theme .scroll__icon::after,
+.dark-theme .link__hover-effect--black::after{
+    background-color: white;
+}
+
+.dark-theme .email__button{
+    background-color: white;
+    color: #242424;
+}
+
+
+
+
 /* 
 
 Project
@@ -540,6 +583,7 @@ footer{
 .footer__logo--img{
     height: 70px;
     width: 70px;
+    filter: invert(1);
 
 }
 
@@ -558,3 +602,57 @@ footer{
     color: white;
 }
 
+
+/* 
+
+shapes
+
+*/
+.shape{
+    position: fixed;
+    transition: all 500ms ease;
+    opacity: 1;
+    visibility: visible;
+}
+
+.shapes--1{
+    top: 15vh;
+    left: 5vw;
+}
+.shapes--2{
+    top: 15vh;
+    left: 50vw;
+}
+.shapes--3{
+    top: 15vh;
+    left: 80vw;
+}
+.shapes--4{
+    top: 50vh;
+    left: 5vw;
+}
+.shapes--5{
+    top: 50vh;
+    left: 50vw;
+}
+.shapes--6{
+    top: 50vh;
+    left: 80vw;
+}
+.shapes--7{
+    top: 80vh;
+    left: 5vw;
+}
+.shapes--8{
+    top: 80vh;
+    left: 50vw;
+}
+.shapes--9{
+    top: 80vh;
+    left: 80vw;
+}
+
+.modal--open .shape{
+    visibility: hidden;
+    opacity: 0;
+}
