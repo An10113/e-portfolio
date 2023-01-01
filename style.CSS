@@ -5,7 +5,9 @@
     padding: 0;
     margin: 0;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 li{
     list-style-type: none
 }
@@ -142,9 +144,11 @@ header,
     border: none;
     background-color: #242424;
     color: white;
-    position: absolute;
+    position: fixed;
     bottom: 32px;
-    right: 50px
+    right: 50px;
+    z-index: 100;
+    box-shadow: 0 12px 30px 0 rgb(0, 0, 0, 0.2);
 }
 
 .scroll{
@@ -485,6 +489,8 @@ Dark-theme
 Project
 
 */
+
+
 .project {
     margin-bottom: 135px;
   }
@@ -609,7 +615,7 @@ shapes
 
 */
 .shape{
-    position: fixed;
+    position:absolute;
     transition: all 500ms ease;
     opacity: 1;
     visibility: visible;
@@ -656,3 +662,74 @@ shapes
     visibility: hidden;
     opacity: 0;
 }
+
+
+
+
+/* 
+
+Media queries
+
+*/
+
+@media (max-width:768px) {
+    .title,
+    .title2{
+        font-size: 80px;
+    }
+    .header__para{
+        font-size: 20px;
+    }
+    .modal{
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .modal__half{
+        width: 100%;
+    }
+    .shape{
+        display: none;
+    }
+    .project__description{
+       left: 30px;
+       max-width: 500px;
+    }
+    .project__description--title{
+        font-size: 36px;
+    }
+
+}
+
+@media (max-width:480px) {
+    .title,
+    .title2{
+        font-size: 52px;
+    }
+    .header__para{
+        font-size: 16px;
+    }
+    .nav__link:first-child{
+        display: none;
+    }
+    .project__description--para{
+        display: none;
+    }
+    .project__description{
+        left: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .project__description--subtitle{
+        margin-bottom: 8px;
+    }
+    .modal__half{
+        padding: 40px;
+    }
+
+}
+
+
