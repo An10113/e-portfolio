@@ -691,6 +691,7 @@ Media queries
         transform: none;
         width: 100%;
         flex-direction: column-reverse;
+        height: fit-content;
     }
     .modal__half{
         width: 100%;
