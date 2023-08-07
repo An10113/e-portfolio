@@ -20,275 +20,238 @@
         emailjs.init("Sdt9Ir8PBdxJJMT2d");
       })();
     </script>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   </head>
   <body>
     <section id="landing-page" onmousemove="moveBackground(event)">
       <nav>
         <figure>
-          <img id="personal-logo" src="./assets/letter-a.png" alt="" />
+          <img id="personal-logo" src="./assets/letter-a.png" alt="">
         </figure>
         <ul class="nav__link--list">
-          <li class="nav__link click">
-            <a
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              onclick="toggleModal()"
-              >About</a
-            >
+          <li class="nav__link" onclick="toggleModal()">
+            <a href="#" class="
+              nav__link--anchor
+              link__hover-effect
+              link__hover-effect--black
+            ">About</a>
           </li>
-          <li class="nav__link click">
-            <a
-              href="#project"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              >Project</a
-            >
+          <li class="nav__link">
+            <a href="#projects" class="
+              nav__link--anchor
+              link__hover-effect
+              link__hover-effect--black
+            ">Projects</a>
           </li>
-          <li class="nav__link click">
-            <a
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              onclick="toggleModal()"
-              >Contact</a
-            >
+          <li class="nav__link" onclick="toggleModal()">
+            <a href="#" class="
+              nav__link--anchor
+              link__hover-effect
+              link__hover-effect--black
+            ">Contact</a>
           </li>
           <li class="nav__link click" onclick="toggleContrast()">
-            <a
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              ><i class="fa-solid fa-circle-half-stroke"></i
-            ></a>
+            <a href="#" class="
+              nav__link--anchor
+              link__hover-effect
+              link__hover-effect--black
+            "><i class="fas fa-adjust"></i></a>
           </li>
         </ul>
       </nav>
-      <header>
-        <div class="header__content">
+      <header class="header">
+        <div class="header__content" data-aos="fade-up" data-aos-duration="1000">
           <h1 class="title">Hello</h1>
-          <h1 class="title2 orange">I'm An</h1>
+          <h1 class="title green">I'm An</h1>
           <p class="header__para">
-            I'm a 19 years old<span class="orange emphasis"> frontend software engineer</span> with a strong desire to create a nice,
-             responsive web application for everyone
+            I'm a young <b class="green">Frontend Software Engineer</b> with a deep enthusiasm for creating web applications that offer exceptional user experiences.
+            <br>
+            Here's some info  <b class="green click" onclick="toggleModal()">about me</b>.
           </p>
-          <p class="header__para">
-            Here's some info <span class="orange emphasis cursor" onclick="toggleModal()">about me</span>
-          </p>
-          <div class="header__list">
-            <a href="" class="header__link orange click">
+          <div class="social__list">
+            <a href="" class="social__link green click" target="_blank">
               <i class="fa-brands fa-linkedin"></i>
             </a>
-            <a href="" class="header__link orange click">
+            <a href="https://github.com/An10113" target="_blank" class="social__link green click">
               <i class="fa-brands fa-github"></i>
             </a>
-            <a href="" class="header__link orange click">
+            <a href="" class="social__link green click" target="_blank">
               <i class="fa-solid fa-envelope"></i>
             </a>
           </div>
         </div>
       </header>
       <a href="#">
-        <button class="email__button click" onclick="toggleModal()">
-          <i class="fa-regular fa-envelope"></i>
+        <button class="mail__btn click" onclick="toggleModal()">
+          <i class="fas fa-envelope"></i>
         </button>
       </a>
-      <a href="#project" class="scroll">
+      <a href="#projects" class="scroll">
         <div class="scroll__icon click"></div>
       </a>
       <div class="modal">
         <div class="modal__half modal__about">
-          <h3 class="modal__title modal__title--about">
-            Here's some fact about me
-          </h3>
-          <h4 class="modal__subtitle modal__subtitle--about">
-            Frontend Software Engineer.
-          </h4>
-          <p class="modal__para modal__para--about">
-            I'm a young software engineer with an extensive knowledge in the field.
-            <br />
-            <br />
-            I'm also solving problem that related to <b class="orange">HTML </b>,<b class="orange">CSS </b>,<b class="orange">Javascript </b> and <b class="orange">React </b> everyday.
+          <h3 class="modal__title modal__title--about">Here's a brief overview of myself.</h3>
+          <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer.</h4>
+          <p class="modal__para">
+            I'm a youthful software engineer possessing an expansive expertise within the domain.
+            <br>
           </p>
           <div class="modal__languages">
             <figure class="modal__language">
-              <img
-                class="modal__language--img"
-                src="./assets/226269.png"
-                alt=""
-              />
-              <span class="Language__name">HTML</span>
+              <img class="modal__language--img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                alt="">
+              <span class="language__name">HTML</span>
             </figure>
             <figure class="modal__language">
-              <img
-                class="modal__language--img"
-                src="./assets/732190.png"
-                alt=""
-              />
-              <span class="Language__name">CSS</span>
+              <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                alt="">
+              <span class="language__name">CSS</span>
             </figure>
             <figure class="modal__language">
-              <img
-                class="modal__language--img"
-                src="./assets/javascript-1-225993.webp"
-                alt=""
-              />
-              <span class="Language__name">Javascript</span>
+              <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+                alt="">
+              <span class="language__name">JavaScript</span>
             </figure>
+            <!-- <figure class="modal__language">
+              <img class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png" alt="">
+              <span class="language__name">TypeScript</span>
+            </figure> -->
             <figure class="modal__language">
-              <img
-                class="modal__language--img"
-                src="./assets/react-3-1175109.webp"
-                alt=""
-              />
-              <span class="Language__name">React</span>
+              <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+                alt="">
+              <span class="language__name">React</span>
             </figure>
           </div>
         </div>
         <div class="modal__half modal__contact">
-          <i
-            class="fa-regular fa-circle-xmark modal__exit click"
-            onclick="toggleModal()"
-          ></i>
-          <h3 class="modal__title modal__title--contact">Let's have a chat</h3>
-          <h4 class="modal__subtitle modal__subtitle--contact">
-            I'm currently open to new experiences.
-          </h4>
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+          <h3 class="modal__title modal__title--contact">
+            I'm ready for a conversation!
+          </h3>
+          <h3 class="modal__sub-title modal__sub-title--contact">
+            I am presently welcoming new possibilities.
+          </h3>
           <form id="contact__form" onsubmit="contact(event)">
             <div class="form__item">
               <label class="form__item--label">Name</label>
-              <input class="input" name="user_name" type="text" required />
+              <input class="input" name="user_name" type="text" required></input>
             </div>
             <div class="form__item">
               <label class="form__item--label">Email</label>
-              <input class="input" name="user_email" type="email" required />
+              <input class="input" name="user_email" type="email" required></input>
             </div>
             <div class="form__item">
-              <label class="form__item--label"> Message</label>
-              <textarea class="input" name="message" type="text"></textarea>
+              <label class="form__item--label">Message</label>
+              <textarea class="input" name="message" type="text" required></textarea>
             </div>
-            <button id="conatact__submit" class="form__submit">
+            <button id="contact__submit" class="form__submit">
               Send it my way
             </button>
           </form>
           <div class="modal__overlay modal__overlay--loading">
-            <i class="fa-solid fa-spinner"></i>
+            <i class="fas fa-spinner"></i>
           </div>
           <div class="modal__overlay modal__overlay--success">
-            Thanks for the message!
-            <br />
-            Hope to work with you soon
+            Thank you for reaching out! I'm excited to connect with you in the near future.
           </div>
         </div>
       </div>
-      <img src="./assets/semi circle.svg" alt="" class="shapes--1 shape"/>
-      <img src="./assets/squiggly.svg" alt="" class="shapes--2 shape"/>
-      <img src="./assets/triangle.svg" alt="" class="shapes--3 shape"/>
-      <img src="./assets/circle.svg" alt="" class="shapes--4 shape"/>
-      <img src="./assets/semi circle.svg" alt="" class="shapes--5 shape"/>
-      <img src="./assets/squiggly.svg" alt="" class="shapes--6 shape"/>
-      <img src="./assets/triangle.svg" alt="" class="shapes--7 shape"/>
-      <img src="./assets/circle.svg" alt="" class="shapes--8 shape"/>
-      <img src="./assets/semi circle.svg" alt="" class="shapes--9 shape" />
+      <img src="./assets/semi circle.svg" class="shape shape--0">
+      <img src="./assets/circle.svg" class="shape shape--1">
+      <img src="./assets/squiggly.svg" class="shape shape--2">
+      <img src="./assets/circle.svg" class="shape shape--3">
+      <img src="./assets/triangle.svg" class="shape shape--4">
+      <img src="./assets/circle.svg" class="shape shape--5">
+      <img src="./assets/squiggly.svg" class="shape shape--6">
+      <img src="./assets/circle.svg" class="shape shape--7">
+      <img src="./assets/semi circle.svg" class="shape shape--8">
     </section>
-    <section id="project">
+    <section id="projects">
       <div class="container">
         <div class="row">
           <h1 class="section__title">
-            Here're some of my <span class="orange">Project</span>
+            Here's a glimpse of my <span class="green">projects</span>
           </h1>
           <ul class="project__list">
             <li class="project">
               <div class="project__wrapper">
-                <img
-                  src="./assets/blinker mockup.png"
-                  alt=""
-                  class="project__img"
-                />
-                <div class="project__wrapper--background">
-                  <div class="project__description">
-                    <h3 class="project__description--title">
-                      Car sale project
-                    </h3>
-                    <h4 class="project__description--subtitle">
-                      Html,CSS,Javascript
-                    </h4>
-                    <p class="project__description--para">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Quae vitae eius a fugit minus voluptatibus quam velit
-                      impedit. Quisquam voluptates omnis ea saepe? Molestiae ad
-                      eligendi, quibusdam facere quod ducimus!
-                    </p>
-                    <div class="project__description--list">
-                      <a href="" class="project__description--link click">
-                        <i class="fa-brands fa-github"></i>
-                      </a>
-                      <a href="" class="project__description--link click">
-                        <i class="fa-solid fa-link"></i>
-                      </a>
-                    </div>
+                <img src="./assets/google mockup.png" class="project__img" alt="">
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Google In-Store
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript, Vue, Vuex
+                  </h4>
+                  <p class="project__description--para">
+                    Google In-Store is a platform allowing Google retail employees to report any issues with their
+                    store products. Once an issue is reported, it is posted to an API which populates a separate
+                    platform's frontend - which is used by Google's vendors to fix the issue as soon as possible. I was
+                    the sole
+                    front-end developer of this application.
+                  </p>
+                  <div class="project__description--links">
+                    <a href="https://googleinstore.com.au/" class="project__description--link">
+                      <i class="fas fa-link"></i>
+                    </a>
                   </div>
                 </div>
               </div>
             </li>
             <li class="project">
               <div class="project__wrapper">
-                <img
-                  src="./assets/blinker mockup.png"
-                  alt=""
-                  class="project__img"
-                />
-                <div class="project__wrapper--background">
-                  <div class="project__description">
-                    <h3 class="project__description--title">
-                      Car sale project
-                    </h3>
-                    <h4 class="project__description--subtitle">
-                      Html,CSS,Javascript
-                    </h4>
-                    <p class="project__description--para">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Quae vitae eius a fugit minus voluptatibus quam velit
-                      impedit. Quisquam voluptates omnis ea saepe? Molestiae ad
-                      eligendi, quibusdam facere quod ducimus!
-                    </p>
-                    <div class="project__description--list">
-                      <a href="" class="project__description--link click">
-                        <i class="fa-brands fa-github"></i>
-                      </a>
-                      <a href="" class="project__description--link click">
-                        <i class="fa-solid fa-link"></i>
-                      </a>
-                    </div>
+                <img src="./assets/JSfighting.jpg" class="project__img" alt="">
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    JS fighting game
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript
+                  </h4>
+                  <p class="project__description--para">
+                    A JavaScript combat game for two players. It showcases health bars, fluid combat moves, and continuous animations, creating an engaging and immersive experience. 
+                  </p>
+                  <div class="project__description--links">
+                    <a href="https://github.com/An10113/js-fighting-game" target="_blank"
+                      class="project__description--link">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://an10113.github.io/js-fighting-game/" class="project__description--link">
+                      <i class="fas fa-link"></i>
+                    </a>
                   </div>
                 </div>
               </div>
             </li>
             <li class="project">
               <div class="project__wrapper">
-                <img
-                  src="./assets/blinker mockup.png"
-                  alt=""
-                  class="project__img"
-                />
-                <div class="project__wrapper--background">
-                  <div class="project__description">
-                    <h3 class="project__description--title">
-                      Car sale project
-                    </h3>
-                    <h4 class="project__description--subtitle">
-                      Html,CSS,Javascript
-                    </h4>
-                    <p class="project__description--para">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Quae vitae eius a fugit minus voluptatibus quam velit
-                      impedit. Quisquam voluptates omnis ea saepe? Molestiae ad
-                      eligendi, quibusdam facere quod ducimus!
-                    </p>
-                    <div class="project__description--list">
-                      <a href="" class="project__description--link click">
-                        <i class="fa-brands fa-github"></i>
-                      </a>
-                      <a href="" class="project__description--link click">
-                        <i class="fa-solid fa-link"></i>
-                      </a>
-                    </div>
+                <img src="./assets/twitter-clone.png" class="project__img" alt="">
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Twitter clone project
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    NextJS, JavaScript, HTML, CSS, Firebase
+                  </h4>
+                  <p class="project__description--para">
+                   This is a clone inspired by Elon Musk's Twitter, incorporating my field expertise.
+                   This side project includes a webpage with sign-in, log-in, image uploading, tweeting, and real-time display using a Firebase database.
+                  </p>
+                  <div class="project__description--links">
+                    <a href="https://github.com/An10113/twitter-clone" target="_blank"
+                      class="project__description--link">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://twitter-clone-nndn.vercel.app/" target="_blank" class="project__description--link">
+                      <i class="fas fa-link"></i>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -299,39 +262,53 @@
     </section>
     <footer>
       <div class="container">
-        <div class="footer__row row">
-          <figure>
-            <img class="footer__logo--img" src="./assets/letter-a.png" alt="" />
-          </figure>
+        <div class="row footer__row">
+          <a href="#" class="footer__anchor">
+            <figure class="footer__logo">
+              <img src="./assets/letter-a.png" class="footer__logo--img" alt="">
+            </figure>
+            <span class="footer__logo--popper">
+              Top
+              <i class="fas fa-arrow-up"></i>
+            </span>
+          </a>
           <div class="footer__social--list">
-            <a
-              href="#"
-              class="footer__social--link link__hover-effect link__hover-effect--white click"
-            >
-              Github
+            <a href="https://github.com/davidbr4gg" class="
+            footer__social--link
+            link__hover-effect
+            link__hover-effect--white
+          ">
+              GitHub
             </a>
-            <a
-              href="#"
-              class="footer__social--link link__hover-effect link__hover-effect--white click"
-            >
-              Linkedin
+            <a href="https://www.linkedin.com/in/david-bragg-5b23a1176/" target="_blank" class="
+            footer__social--link
+            link__hover-effect
+            link__hover-effect--white
+          ">
+              LinkedIn
             </a>
-            <a
-              href="#"
-              class="footer__social--link link__hover-effect link__hover-effect--white click"
-            >
+            <a href="#" onclick="toggleModal()" class="
+            footer__social--link
+            link__hover-effect
+            link__hover-effect--white
+          ">
+              Contact
+            </a>
+            <a href="./assets/David Bragg Resume.pdf" target="_blank" class="
+            footer__social--link
+            link__hover-effect
+            link__hover-effect--white
+          ">
               Resume
-            </a>
-            <a
-              href="#"
-              class="footer__social--link link__hover-effect link__hover-effect--white click"
-            >
-              Email
             </a>
           </div>
           <div class="footer__copyright">Copyright © Thanh An Tran 2022</div>
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

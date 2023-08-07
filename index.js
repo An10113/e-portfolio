@@ -1,3 +1,5 @@
+let isModalOpen = false;
+let contrastToggle = false;
 
 function contact(event){
     event.preventDefault();
@@ -21,27 +23,24 @@ function contact(event){
     }
 
 
-let isModalopen = false
-function toggleModal(){
-    if(isModalopen){
-        isModalopen = false
-        return document.body.classList.remove("modal--open")
+function toggleModal() {
+    if (isModalOpen) {
+      isModalOpen = false;
+      return document.body.classList.remove("modal--open");
     }
-    isModalopen = true
-    document.body.classList += "modal--open"
-}
+    isModalOpen = true;
+    document.body.classList += " modal--open";
+  }
 
 
-let Contrast = false ;
-function toggleContrast(){
-    console.log('ok')
-    Contrast =  !Contrast
-    if(Contrast){
-        document.body.classList += "dark-theme"
-    }
-    else{
-        document.body.classList.remove("dark-theme")
-    }
+function toggleContrast() {
+  contrastToggle = !contrastToggle;
+  if (contrastToggle) {
+    document.body.classList += " dark-theme"
+  }
+  else {
+    document.body.classList.remove("dark-theme")
+  }
 }
 
 const scaleFactor = 1/20
